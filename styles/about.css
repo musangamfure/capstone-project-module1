@@ -1,3 +1,6 @@
+.logo h3 {
+  color: var(--orange-color);
+}
 .hero {
   background: url("../images/backgrounds/about-bg.png") center / contain;
   background-repeat: no-repeat;
@@ -32,19 +35,24 @@ h1 {
 }
 
 .line {
-  width: 40px;
-  height: 2px;
-  background-color: var(--orange-color);
+  width: 2.5rem;
+  height: 0.125rem;
+  background-color: c;
 }
 
 .box {
   text-align: center;
-  padding: 30px 40px;
+  padding: 1.875rem 2.5rem;
   border: 1.5px solid var(--gray-color);
   background-color: var(--white-color);
   color: rgb(138, 136, 136);
-  margin: 10px 0;
+  margin: 0.625rem 0;
   max-width: 100%;
+}
+
+.box p {
+  font-size: var(--herotext);
+  line-height: 1.5rem;
 }
 
 .inner a {
@@ -62,8 +70,8 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
-  padding: 60px;
+  gap: 1rem;
+  padding: 3.75rem;
 }
 
 .creative h3 {
@@ -78,13 +86,14 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 1.5rem;
   text-align: center;
 }
 
 .holder p {
   color: rgb(138, 136, 136);
-  max-width: 620px;
+  max-width: 38.75rem;
+  line-height: 1.5rem;
 }
 
 .logo-box {
@@ -104,17 +113,17 @@ h1 {
 .prev {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
   align-items: center;
   border: 1px solid;
   border-color: var(--light-black-color);
   min-height: 70vh;
-  padding: 80px;
+  padding: 5rem;
 }
 
 article {
   display: flex;
-  gap: 32px;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -122,10 +131,10 @@ article {
 }
 
 article div {
-  padding: 60px;
+  padding: 3.75rem;
   background: url("../images/about/about_2013.png") center / cover no-repeat;
   width: 50%;
-  height: 300px;
+  height: 18.75rem;
 }
 
 .bg-2011 {
@@ -142,11 +151,11 @@ article div {
   color: var(--gray-color);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .hero {
     min-height: 70vh;
-    gap: 16px;
-    padding: 20px;
+    gap: 1rem;
+    padding: 1.25rem;
   }
 
   .inner {
@@ -155,26 +164,26 @@ article div {
   }
 
   .box {
-    padding: 24px;
+    padding: 1.5rem;
   }
 
   .logo-box {
-    padding: 30px 24px;
+    padding: 1.875rem 1.5rem;
     width: 100%;
   }
 
   .logo-box img {
-    width: 100px;
+    width: 6.25rem;
     max-width: none;
     text-align: center;
   }
 
   .creative {
-    padding: 24px;
+    padding: 1.5rem;
   }
 
   .prev {
-    padding: 24px;
+    padding: 1.5rem;
   }
 
   article {
@@ -187,6 +196,6 @@ article div {
   }
 
   p {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
 }

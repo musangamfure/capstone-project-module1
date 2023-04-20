@@ -23,23 +23,24 @@ h1 {
 }
 
 span {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
   color: var(--orange-color);
 }
 
 .box-desc {
   border: 2.5px solid var(--white-color);
-  padding: 24px 16px;
+  padding: 1.5rem 1rem;
   width: fit-content;
   color: var(--light-black-color);
   z-index: 3;
+  line-height: 1.5rem;
 }
 
 .info {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
   color: var(--light-black-color);
 }
 
@@ -59,8 +60,8 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 48px;
-  padding: 90px;
+  gap: 3rem;
+  padding: 5.625rem;
 }
 
 .main-programe h3 {
@@ -74,7 +75,7 @@ span {
 
 .cards-group {
   display: flex;
-  gap: 4px;
+  gap: 0.25rem;
   width: 90%;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -88,8 +89,8 @@ span {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 16px;
-  padding: 24px;
+  gap: 1rem;
+  padding: 1.5rem;
   border: 2px solid transparent;
   color: var(--gray-color);
   transition: 0.3s ease;
@@ -98,6 +99,7 @@ span {
 
 .card:hover {
   border: 2px solid var(--white-color);
+  transform: scale(1.1);
 }
 
 .card-title {
@@ -114,9 +116,9 @@ span {
 .feature-section {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 3rem;
   align-items: center;
-  padding: 70px 0;
+  padding: 4.375rem 0;
 }
 
 .feature-section h3 {
@@ -126,22 +128,23 @@ span {
 .speak-group {
   display: flex;
   flex-direction: column;
-  max-height: 771px;
+  max-height: 48.1875rem;
   width: 70%;
   margin: 0 auto;
   flex-wrap: wrap;
   align-items: center;
-  gap: 48px;
+  gap: 3rem;
 }
 
 .speaker {
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
+  transition: 0.5s ease-in-out;
 }
 
 .img-holder {
-  width: 120px;
-  height: 120px;
+  width: 7.5rem;
+  height: 7.5rem;
   position: relative;
 }
 
@@ -154,26 +157,30 @@ span {
 .speaker-info {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
+}
+
+.speaker:hover .speaker-img {
+  transform: scale(1.1);
 }
 
 .line {
-  width: 30px;
-  height: 2px;
+  width: 1.875rem;
+  height: 0.125rem;
   background-color: var(--gray-color);
 }
 
 .oranga-line {
-  height: 2px;
-  width: 30px;
+  height: 0.125rem;
+  width: 1.875rem;
   background-color: var(--orange-color);
   display: flex;
   justify-content: flex-start;
 }
 
 .about {
-  max-width: 180px;
-  font-size: var(--fontsize-h4);
+  max-width: 11.25rem;
+  font-size: var(--herotext);
 }
 
 .square-patern {
@@ -191,10 +198,10 @@ span {
   background-color: var(--light-black-color);
   display: flex;
   flex-direction: column;
-  padding: 60px;
+  padding: 3.75rem;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .partners h3 {
@@ -208,11 +215,11 @@ span {
   flex-wrap: wrap;
   width: 90%;
   margin: 0 auto;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .partner-list li {
-  flex-basis: 210px;
+  flex-basis: 13.125rem;
   text-align: center;
 }
 
@@ -225,7 +232,7 @@ span {
   font-size: var(--postion-title);
 }
 
-@media (max-width: 867px) {
+@media (max-width: 54.1875rem) {
   .speak-group {
     display: flex;
     flex-direction: column;
@@ -234,11 +241,11 @@ span {
     margin: 0 auto;
     flex-wrap: nowrap;
     align-items: center;
-    gap: 48px;
+    gap: 3rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .hero {
     flex-direction: column;
   }
@@ -248,11 +255,11 @@ span {
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
   }
 
   .main-programe {
-    padding: 30px 10px;
+    padding: 1.875rem 0.625rem;
   }
 
   .cards-group {
