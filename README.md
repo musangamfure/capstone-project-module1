@@ -8,7 +8,7 @@ This is a project acknowledging and affirming that I have properly understood ev
 
 > |     | Mobile version                                  | Desktop version                                  |     |
 > | --- | ----------------------------------------------- | ------------------------------------------------ | --- |
-> |     | ![Screenshot1](./images/screenshots/mobile.png) | ![Screenshot2](./images/screenshots/desktop.png) |
+> |     | ![Screenshot1](./images/screenshots/Mobile.PNG) | ![Screenshot2](./images/screenshots/Desktop.PNG) |
 
 This project is to put to test the understanding of individual student on what they've studied so far from the curriculum's module 1.
 
