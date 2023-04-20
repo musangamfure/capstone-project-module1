@@ -1,6 +1,7 @@
 .logo h3 {
   color: var(--orange-color);
 }
+
 .hero {
   background: url("../images/backgrounds/about-bg.png") center / contain;
   background-repeat: no-repeat;
@@ -37,7 +38,7 @@ h1 {
 .line {
   width: 2.5rem;
   height: 0.125rem;
-  background-color: c;
+  background-color: var(--orange-color);
 }
 
 .box {
