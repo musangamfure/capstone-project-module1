@@ -33,7 +33,7 @@ This project is to put to test the understanding of individual student on what t
 - CSS
 - JAVASCRIPT
 
-Click [here]() to watch a walk-through description, given by me.
+Click [here](https://www.loom.com/share/6ee275ef133f425caa64e0295be8662c) to watch a walk-through description, given by me.
 
 ## Additional Tools
 
@@ -44,7 +44,7 @@ Click [here]() to watch a walk-through description, given by me.
 
 ## Live Demo
 
-[Here]() is the live demo.
+[Here](https://musangamfure.github.io/capstone-project-module1/) is the live demo.
 
 ## Getting Started
 
