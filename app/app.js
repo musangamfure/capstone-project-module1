@@ -1,100 +1,144 @@
-const featureSection = document.querySelector('.speak-group');
-const burger = document.querySelector('.burger');
-const mobileMenu = document.querySelector('.mobile-menu');
-const closeMenu = document.querySelector('.close');
-const links = document.querySelectorAll('a');
-const url = window.location.href;
-
-const data = [
+const dynamicspeakers = [
   {
+    id: 1,
+    url: './images/speakers/businessman.PNG',
     name: 'Ali Morshedlou',
-    imgSrc: './images/speakers/businessman.PNG',
     position: 'CEO',
     about:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto praesentium commodi beatae',
   },
-
   {
+    id: 2,
+    url: './images/speakers/david-mumma.jpg',
     name: 'David Mumma',
-    imgSrc: './images/speakers/david-mumma.jpg',
     position: 'Software Engineer',
     about:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto praesentium commodi beatae',
   },
-
   {
+    id: 3,
+    url: '/images/speakers/happy.PNG',
     name: 'Gift Habeshaw',
-    imgSrc: './images/speakers/happy.PNG',
     position: 'Full-Stack Developer',
     about:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto praesentium commodi beatae',
   },
-
   {
+    id: 4,
+    url: './images/speakers/professionalwoman.PNG',
     name: 'Christina Wocinte',
-    imgSrc: './images/speakers/professionalwoman.PNG',
-    positiom: '',
+    position: 'CEO',
     about:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto praesentium commodi beatae',
   },
-
   {
+    id: 5,
+    url: './images/speakers/cheerfulwoman.PNG',
     name: 'Elin Tabitha',
-    imgSrc: './images/speakers/cheerfulwoman.PNG',
     position: 'Senior Softwore Engineer',
     about:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto praesentium commodi beatae',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto praesentium commodi beatae.',
   },
-
   {
+    id: 6,
+    url: './images/speakers/smartlook.PNG',
     name: 'Juan Enclada',
-    imgSrc: './images/speakers/smartlook.PNG',
     position: 'Senior Developer',
     about:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto praesentium commodi beatae',
   },
 ];
 
-let htmlContent = '';
+const openHam = document.getElementById('openHam');
+const closeHam = document.getElementById('closeHam');
+const menuLink = document.querySelectorAll('.menu-list__item');
+const menucontainer = document.querySelector('.lower-nav__center');
+const featuredSpeakers = document.getElementById('all-speakers');
+const seeMore = document.querySelector('.feature-speakers__see-more');
+const seeLess = document.querySelector('.feature-speakers__see-less');
+const links = document.querySelectorAll('a');
+const url = window.location.href;
 
-data.forEach((item) => {
-  htmlContent += `<li class='speaker'>
-    <div class='img-holder'>
-    <img
+openHam.addEventListener('click', () => {
+  menucontainer.classList.toggle('hide');
+  openHam.classList.add('hide');
+  closeHam.classList.remove('hide');
+});
+
+closeHam.addEventListener('click', () => {
+  menucontainer.classList.toggle('hide');
+  openHam.classList.remove('hide');
+  closeHam.classList.add('hide');
+});
+
+menuLink.forEach((link) => link.addEventListener('click', () => {
+  menucontainer.classList.add('hide');
+  openHam.classList.remove('hide');
+  closeHam.classList.add('hide');
+}));
+
+const renderspeakers = function () {
+  for (let i = 0; i < dynamicspeakers.length; i += 1) {
+    featuredSpeakers.innerHTML += `
+    <div class="feature-speakers__card" >
+    <div class="container">
+    <div class="img-holder">
+     <img
     class='square-patern'
     src="./images/home/empty-chessboard-svgrepo-com.svg"
     alt='cheese-bg'
   />
-    <img
-      class='speaker-img'
-      src=${item.imgSrc}
-      alt='speakers'
-    />
+    <img src=${dynamicspeakers[i].url} alt=${dynamicspeakers[i].name} class="speaker-img">
+     </div>
+    <div class="feature-speakers__card-details">
+        <h3 class="feature-speakers__card-details-name">${dynamicspeakers[i].name}</h3>
+        <p class="feature-speakers__card-details-info">${dynamicspeakers[i].position}</p>
+        <p class="feature-speakers__card-details-about">${dynamicspeakers[i].about}</p>
+    </div>
+    </div>
+     
   </div>
-  <div class='speaker-info'>
-    <h4 class='speaker-name'>${item.name}</h4>
-    <p class='job-title'>${item.position}</p>
-    <div class='line'></div>
-    <p class='about'>
-     ${item.about}
-    </p>
-  </div>
-</li>`;
+          `;
+  }
+};
 
-  featureSection.innerHTML = htmlContent;
+window.addEventListener('load', renderspeakers);
+
+let currentItems = 2;
+
+seeMore.addEventListener('click', () => {
+  const speakersdata = [
+    ...document.querySelectorAll('.feature-speakers__card'),
+  ];
+
+  for (let i = currentItems; i < speakersdata.length; i += 1) {
+    speakersdata[i].style.display = 'grid';
+  }
+
+  currentItems += 4;
+
+  if (currentItems >= speakersdata.length) {
+    seeMore.style.display = 'none';
+    seeLess.classList.remove('hide');
+  }
 });
 
-const handelBurger = () => {
-  mobileMenu.classList.toggle('active');
-};
+seeLess.addEventListener('click', () => {
+  const speakersdata = [
+    ...document.querySelectorAll('.feature-speakers__card'),
+  ];
 
-const handelCloseMenu = () => {
-  mobileMenu.classList.toggle('active');
-};
+  for (let i = 2; i < speakersdata.length; i += 1) {
+    speakersdata[i].style.display = 'none';
+  }
 
-burger.addEventListener('click', handelBurger);
+  currentItems -= 4;
 
-closeMenu.addEventListener('click', handelCloseMenu);
+  if (currentItems <= 2) {
+    seeMore.style.display = 'grid';
+    seeLess.classList.add('hide');
+  }
+});
 
 links.forEach((link) => {
   if (link.href === url) link.id = 'active-link';
