@@ -36,120 +36,163 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/about.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Global Remote Developer Summit</title>
   </head>
   <body>
-    <header class="desktop">
-      <div class="sub-header">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-
-        <a href="#">English</a>
-        <a href="#">My page</a>
-        <a href="#">Log out</a>
-      </div>
+    <header>
       <nav>
-        <div class="logo">
-          <a href="./index.html"><h3>WeRemote</h3></a>
-        </div>
-        <ul class="parent-link">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li>Programe</li>
-          <li>Join</li>
-          <li>Sponser</li>
-          <li>News</li>
-          <li><a class="highlight" href="./index.html">WeRemote</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero">
-        <nav class="mobile">
-          <div class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="mobile-menu">
-            <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./about.html">About</a></li>
-              <li>Programe</li>
-              <li>Join</li>
-              <li>Sponser</li>
-              <li>News</li>
-              <li><a class="highlight" href="">WeRemote</a></li>
+        <div class="top-nav">
+          <div class="top-nav__container">
+            <img
+              src="./images/home/facebook.svg"
+              alt="facebook-logo"
+              class="icon"
+            />
+            <img
+              src="./images/home/twitter.svg"
+              alt="facebook-logo"
+              class="icon"
+            />
+            <ul class="top-nav__menu">
+              <li class="top-nav__menu-item"><a href="#">English</a></li>
+              <li class="top-nav__menu-item"><a href="#">My Page</a></li>
+              <li class="top-nav__menu-item"><a href="#">Logout</a></li>
             </ul>
-            <div class="close">
-              <img src="../images/home/XIcon.svg" alt="close" />
-            </div>
           </div>
-        </nav>
-        <div class="inner">
-          <h1>
-            Global remote <br />
-            software developer summit 2023
-          </h1>
-          <div class="line"></div>
-          <div class="box">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Consequatur molestiae <br />
-              distinctio placeat. Voluptatem provident ab nesciunt doloribus aut
-              obcaecati doloremque quod beatae <br />
-              accusantium vero atque pariatur corporis dolores est eaque, quia
-              non quidem, blanditiis autem maiores culpa inventore tenetur
-              voluptates saepe. Rerum labore voluptatum, aliquid accusamus iusto
-              et, dolore mollitia provident natus distinctio minima aut quasi,
-              repudiandae quisquam dicta. Perferendis?
-            </p>
-          </div>
-          <p class="contact">
-            Please contact us per email for any further Global remote software
-            developer summit 2023
-          </p>
-          <p class="email">weremote@info.org</p>
         </div>
-      </section>
-      <section class="creative">
-        <h3>Global remote software developer summit logo</h3>
-        <div class="line"></div>
-        <div class="holder">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+        <div class="lower-nav">
+          <div class="lower-nav__center hide" id="menu">
+            <a href="index.html"><h3 class="logo">WeRemote</h3></a>
+            <ul class="logo__menu-list">
+              <li class="menu-list__item"><a href="index.html">Home</a></li>
+              <li class="menu-list__item"><a href="about.html">About</a></li>
+              <li class="menu-list__item"><a href="#speakers">Program</a></li>
+              <li class="menu-list__item"><a href="#speakers">Speakers</a></li>
+              <li class="menu-list__item"><a href="#join">Join</a></li>
+              <li class="menu-list__item"><a href="#partners">Partners</a></li>
+              <li class="menu-list__item WeRemote"><a href="#">WeRemote</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="lower-nav__hamburger" id="hambuger">
+          <img
+            src="./images/home/hamburgermenu.svg"
+            alt="hambuger"
+            class="open ham-icon"
+            id="openHam"
+          />
+          <img
+            src="./images/home/XIcon.svg"
+            alt="hambuger"
+            class="close hide ham-icon"
+            id="closeHam"
+          />
+        </div>
+      </nav>
+      <div class="about__hero" id="about__hero">
+        <h3 class="about__hero-title">"Hello! Remote world"</h3>
+        <h1 class="about__hero-heading">
+          Global remote <br />
+          software developer summit 2023
+        </h1>
+        <p class="about__hero-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+          molestiae <br />
+          distinctio placeat. Voluptatem provident ab nesciunt doloribus aut
+          obcaecati doloremque quod beatae <br />
+          accusantium vero atque pariatur corporis dolores est eaque, quia non
+          quidem, blanditiis autem maiores culpa inventore tenetur voluptates
+          saepe.
+        </p>
+        <p class="about__hero-contact">
+          Please contact us per email for any further Global remote software
+          developer summit 2023
+        </p>
+        <p class="about__hero-email">
+          <a href="#">weremote@info.org</a>
+        </p>
+      </div>
+    </header>
+    <main>
+      <section class="decide">
+        <div class="decide__container">
+          <h2 class="decide__container-title">
+            Global remote software developer summit logo
+          </h2>
+          <p class="decide__container-body">
+            T Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
             earum, maiores, sequi consectetur repudiandae quos dolor asperiores,
             voluptas natus eveniet consequuntur magni veniam voluptates quae
           </p>
-          <div class="logo-box">
-            <h3>WeRemote</h3>
+          <div class="decide__container-container">
+            <h3 class="about-logo">WeRemote</h3>
+            <div class="decide__container-container-details">
+              <h2 class="decide__container-container-details-text">GRSDS</h2>
+              <p class="decide__container-container-details-body">
+                14th - 16th Oct 2023
+              </p>
+            </div>
           </div>
         </div>
       </section>
-      <section class="prev">
-        <h3>See the past global Summits</h3>
-        <div class="line"></div>
-        <p>
-          Take a lookt at the last two CC Global Summits which took place in
-          Buenos Aires and in Warsaw.
-        </p>
-        <article class="group">
-          <div></div>
-          <div class="bg-2011"></div>
-        </article>
+
+      <section class="previous">
+        <div class="previous__container">
+          <h4 class="previous__container-header">
+            See the Previous GRSDS Summits
+          </h4>
+          <p class="previous__container-body">
+            Take a look at the last two summits which took place in California
+            and Budapest.
+          </p>
+          <div class="previous__container-images">
+            <div class="previous__container-images-card">
+              <img
+                src="./images/bg1.png"
+                alt="evebt 1"
+                class="previous__container-images-card-image"
+              />
+              <div class="previous__container-images-card-details">
+                <div class="previous-text">
+                  <h2 class="previous__container-images-card-details-header">
+                    2021
+                  </h2>
+                  <p class="previous__container-images-card-details-body">
+                    GRSDS conference in Moscow,Russia
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="previous__container-images-card">
+              <img
+                src="./images/bg2.png"
+                alt="evebt 1"
+                class="previous__container-images-card-image"
+              />
+              <div class="previous__container-images-card-details">
+                <div class="previous-text">
+                  <h2 class="previous__container-images-card-details-header">
+                    2022
+                  </h2>
+                  <p class="previous__container-images-card-details-body">
+                    GRSDS conference in Stockholm, Sweden
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+
     <footer class="about-footer">
-      <div>
+      <div class="footer__container">
         <h3 class="logo">WeRemote</h3>
-        <p>© WeRemote 2023</p>
+        <p class="reserve">All rights reserved.</p>
       </div>
     </footer>
-    <script src="../app/about.js"></script>
+    <script src="../app/app.js"></script>
   </body>
 </html>

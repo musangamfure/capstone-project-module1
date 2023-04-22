@@ -1,52 +1,80 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+<!-- TABLE OF CONTENTS -->
 
-# Capstone-project
+# 📗 Table of Contents
 
-This is a project acknowledging and affirming that I have properly understood everything learnt so far from the first module.
+- [📖 About the Project](#about-project)
+  - [🛠️ Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🤯 Walk through video ](#walk-through)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
 
-- Here is the page preview
+<!-- PROJECT DESCRIPTION -->
 
-> |     | Mobile version                                  | Desktop version                                  |     |
-> | --- | ----------------------------------------------- | ------------------------------------------------ | --- |
-> |     | ![Screenshot1](./images/screenshots/mobile.png) | ![Screenshot2](./images/screenshots/desktop.png) |
+# 📖 [GLOBAL REMOTE SOFTWARE DEVELOPER SUMMIT 2023] <a name="about-project"></a>
 
-This project is to put to test the understanding of individual student on what they've studied so far from the curriculum's module 1.
+> This website is the result of the first Capstone Project for the Microverse Program😊. This is showing the World Tour for La Rienda Band, an argentinian band that will travel around the world.👌
 
-> Learning objectives
+## 🛠️ Built With <a name="built-with"></a>
 
-- I Used semantic HTML tags.
-- I Applied best practices in HTML code.
-- Used CSS selectors correctly.
-- Used CSS box model.
-- Used Flexbox to place elements on the page.
-- Demonstrated ability to create UIs adaptable to different screen sizes using media queries.
-- Used GitHub Pages to deploy web pages.
-- Applied JavaScript best practices and language style guides in code.
-- Used JavaScript to manipulate DOM elements.
-- Used JavaScript events.
-- Used objects to store and access data.
-- Communicated technical concepts to other technical people.
+### Tech Stack <a name="tech-stack"></a>
 
-## Built With
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://www.w3.org/TR/2011/WD-html5-20110405/">HTML5</a></li>
+    <li><a href="https://www.w3.org/Style/CSS/specs.en.html">CSS</a></li>
+    <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">JavaScript</a></li>
+  </ul>
+</details>
 
-- HTML
-- CSS
-- JAVASCRIPT
+<!-- Features -->
 
-Click [here]() to watch a walk-through description, given by me.
+### Key Features <a name="key-features"></a>
 
-## Additional Tools
+- Landing Page for activities
+- Mobile first development
+- Responsiveness and flexibility for any screen size
+- Apply JavaScript best practices and language style guides in code.👌
+- Use JavaScript to manipulate DOM elements.
+- Use JavaScript events.💯
+- Use objects to store and access data.
+- Communicate technical concepts to other technical people.
 
-- WebHint
-- Stylelint
-- ESlint
-- Node Packet Manager
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Live Demo
+<!-- LIVE DEMO -->
 
-[Here]() is the live demo.
+## 🤯 Walk through video <a name="walk-through"></a>
 
-## Getting Started
+- [here](https://www.loom.com/share/f91d82d78ddd4b338f0c749ecc0d911e)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://musangamfure.github.io/capstone-project-module1/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy of this project up and running on your local machine follow the steps below.
 
@@ -109,6 +137,8 @@ npx eslint .
 - I used GitHub Pages to deploy my website
 - For more information about publishing sources, see "[About github page](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites)"
 
+<!-- AUTHORS -->
+
 ## Author
 
 👤 **Is-Musangamfura Emmanuel**
@@ -117,28 +147,48 @@ npx eslint .
 - Twitter: [@musangamfure](https://twitter.com/musangamfure)
 - LinkedIn: [@Musangamfura Emmanuel](https://www.linkedin.com/in/musangamfura-emmanuel-6a214a262/)
 
-## Credits
+<!-- FUTURE FEATURES -->
 
-- The original design ideal by [Cindy Shin in Behance](https://www.behance.net/adagio07)
-- Project from [Microverse](https://bit.ly/MicroverseTN) html & css module
-- Images inspired by [Unsplash](unsplash.com)
+## 🔭 Future Features <a name="future-features"></a>
 
-## Contributing
+Future changes:
+
+- improve slider responsiveness
+- Add more webpages such as Tickets Page and Schedule Page.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/musangamfure/capstone-project-module1/issues).
 
-## Show your support
+Feel free to check the [issues page](../../issues/).
 
-Give a ⭐️ if you like this project and how we manage to build it!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Acknowledgments
+<!-- SUPPORT -->
 
-- Thanks to the Microverse team for the great curriculum.
-- Thanks to the Code Reviewer(s) for the insightful feedbacks.
-- A great thanks to My coding partner(s), morning session team, and standup team for their contributions.
-- Hat tip to anyone whose code was used.
+## ⭐ Show your support <a name="support"></a>
 
-## 📝 License
+Give a ⭐ if you like this project!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+- Templete used in project provided by (Microverse).
+- Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

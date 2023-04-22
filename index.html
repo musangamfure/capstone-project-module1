@@ -34,163 +34,177 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Global Remote Developer Summit</title>
   </head>
   <body>
-    <header class="desktop">
-      <div class="sub-header">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-
-        <a href="#">English</a>
-        <a href="#">My page</a>
-        <a href="#">Log out</a>
-      </div>
+    <header>
       <nav>
-        <div class="logo">
-          <h3>WeRemote</h3>
-        </div>
-        <ul class="parent-link">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li>Programe</li>
-          <li>Join</li>
-          <li>Sponser</li>
-          <li>News</li>
-          <li><a class="highlight" href="">WeRemote</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <!-- hero section -->
-      <section class="hero">
-        <nav class="mobile">
-          <div class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="mobile-menu">
-            <ul class="lin-parent">
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./pages/about.html">About</a></li>
-              <li>Programe</li>
-              <li>Join</li>
-              <li>Sponser</li>
-              <li>News</li>
-              <li><a class="highlight" href="">WeRemote</a></li>
+        <div class="top-nav">
+          <div class="top-nav__container">
+            <img
+              src="./images/home/facebook.svg"
+              alt="facebook-logo"
+              class="icon"
+            />
+            <img
+              src="./images/home/twitter.svg"
+              alt="facebook-logo"
+              class="icon"
+            />
+            <ul class="top-nav__menu">
+              <li class="top-nav__menu-item"><a href="#">English</a></li>
+              <li class="top-nav__menu-item"><a href="#">My Page</a></li>
+              <li class="top-nav__menu-item"><a href="#">Logout</a></li>
             </ul>
-            <div class="close">
-              <img src="./images/home/XIcon.svg" alt="close" />
-            </div>
-          </div>
-        </nav>
-        <div class="inner">
-          <span>"Hello! Remote world"</span>
-          <h1>
-            Global remote <br />
-            software developer <br />
-            summit 2023
-          </h1>
-          <div class="box-desc">
-            <p>
-              Remote is the future of work. Let reshape the meaning of our
-              work<br />
-              a postive change with people over 100 countries is taking place
-            </p>
-          </div>
-          <div class="info">
-            <p class="history">2023.10.16(MO) ~ 17(TUE)</p>
-            <p class="copy-right">@ zoom virtual</p>
           </div>
         </div>
-      </section>
+        <div class="lower-nav">
+          <div class="lower-nav__center hide" id="menu">
+            <a class="logo" href="index.html"><h3>WeRemote</h3></a>
 
-      <!-- main programe section -->
-
-      <section class="main-programe">
-        <h3 class="sec-title">Main Programe</h3>
-        <span class="oranga-line"></span>
-
-        <article class="cards-group">
-          <div class="card">
-            <img src="./images/home/research.svg" alt="icon" />
-            <h4 class="card-title">Work Opportunities</h4>
-            <p class="card-desc">
+            <ul class="logo__menu-list">
+              <li class="menu-list__item"><a href="#index.html">Home</a></li>
+              <li class="menu-list__item"><a href="about.html">About</a></li>
+              <li class="menu-list__item"><a href="#speakers">Speakers</a></li>
+              <li class="menu-list__item"><a href="#programs">Programs</a></li>
+              <li class="menu-list__item"><a href="#join">Join</a></li>
+              <li class="menu-list__item"><a href="#partners">Partners</a></li>
+              <li class="menu-list__item WeRemote">
+                <a href="#index.html">WeRemote</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="lower-nav__hamburger" id="hambuger">
+          <img
+            src="./images/home/hamburgermenu.svg"
+            alt="hambuger"
+            class="open ham-icon"
+            id="openHam"
+          />
+          <img
+            src="./images/home/XIcon.svg"
+            alt="hambuger"
+            class="close hide ham-icon"
+            id="closeHam"
+          />
+        </div>
+      </nav>
+      <div class="hero" id="about">
+        <h3 class="hero__title">"Hello! Remote world""</h3>
+        <h1 class="hero__heading">
+          Global remote <br />
+          software developer <br />
+          summit 2023
+        </h1>
+        <p class="hero__body">
+          Remote is the future of work. Let reshape the meaning of our work<br />
+          a postive change with people over 100 countries is taking place
+        </p>
+        <p class="hero__date">2023.10.16(MO) ~ 17(TUE)</p>
+        <p class="hero__venue">@zoom virtual</p>
+      </div>
+    </header>
+    <main>
+      <div class="program" id="programs">
+        <h3 class="program__title">Main Program</h3>
+        <div class="program__cards">
+          <div class="program__card">
+            <img
+              src="./images/home/research.svg"
+              alt="lecture"
+              class="program__card-image"
+            />
+            <h2 class="program__card-title">Work Opportunities</h2>
+            <p class="program__card-body">
               remote unlock global jobs and exposure to international working
               experience.
             </p>
           </div>
-          <div class="card">
-            <img src="./images/home/design.svg" alt="icon" />
-            <h4 class="card-title">Collaboration</h4>
-            <p class="card-desc">
+
+          <div class="program__card">
+            <img
+              src="./images/home/discussion.svg"
+              alt="exhibition"
+              class="program__card-image"
+            />
+            <h2 class="program__card-title">Collaboration</h2>
+            <p class="program__card-body">
               Learn through pair programming, group projects and project
               reviews.
             </p>
           </div>
-          <div class="card">
-            <img src="./images/home/networking.svg" alt="network-icon" />
-            <h4 class="card-title">Accountability</h4>
-            <p class="card-desc">
+
+          <div class="program__card">
+            <img
+              src="./images/home/knowledge.svg"
+              alt="forum"
+              class="program__card-image"
+            />
+            <h2 class="program__card-title">Accountability</h2>
+            <p class="program__card-body">
               Have the time to share your thoughts and opinions with experts for
               each topic.
             </p>
           </div>
-          <div class="card">
-            <img src="./images/home/discussion.svg" alt="icon" />
-            <h4 class="card-title">Teamwork</h4>
-            <p class="card-desc">
+
+          <div class="program__card">
+            <img
+              src="/images/home/networking.svg"
+              alt="workshop"
+              class="program__card-image"
+            />
+            <h2 class="program__card-title">Teamwork</h2>
+            <p class="program__card-body">
               Learn through pair programming, group projects, career coach
               guidance, and project reviews.
             </p>
           </div>
-          <div class="card">
-            <img src="./images/home/knowledge.svg" alt="icon" />
-            <h4 class="card-title">Milticulture</h4>
-            <p class="card-desc">
+
+          <div class="program__card">
+            <img
+              src="./images/home/design.svg"
+              alt="CC ignite"
+              class="program__card-image"
+            />
+            <h2 class="program__card-title">Milticulture</h2>
+            <p class="program__card-body">
               Get opportuntities to work to and connect with developers around
               the world, also after the summit.
             </p>
           </div>
-        </article>
-        <a class="more" href="#">See the whole programe</a>
+        </div>
+
+        <button class="program__btn" id="join">Join GRSDS 2023</button>
+        <a href="#" class="program__link">See The Whole Program</a>
+      </div>
+
+      <section class="feature-speakers" id="speakers">
+        <h2 class="feature-speakers__container-title">Feature Speakers</h2>
+        <div class="feature-speakers__container" id="all-speakers"></div>
+        <button class="feature-speakers__see-more">See More</button>
+        <button class="feature-speakers__see-less hide">See Less</button>
       </section>
-      <section class="feature-section">
-        <h3 class="sec-title">Featured Speakers</h3>
-        <span class="oranga-line"></span>
 
-        <ul class="speak-group"></ul>
-      </section>
-
-      <!-- partner section -->
-
-      <section class="partners">
-        <h3 class="sec-title">Partner</h3>
-        <span class="oranga-line"></span>
-        <ul class="partner-list">
-          <li><img src="./images/partners/Meta-Logo.png" alt="airbnb" /></li>
-          <li><img src="./images/partners/google-logo.png" alt="google" /></li>
-          <li>
-            <img src="./images/partners/att-vector-logo.svg" alt="partners" />
-          </li>
-          <li>
-            <img src="./images/partners/logo-white-340.webp" alt="microverse" />
-          </li>
-          <li><img src="./images/partners/remote.png" alt="logo" /></li>
-        </ul>
+      <section class="partners" id="partners">
+        <div class="partners__container">
+          <h2 class="partners__container-heading">Partners</h2>
+          <div class="partners__container-logo">
+            <div class="partners__container-logo__item">Google</div>
+            <div class="partners__container-logo__item">Microverse</div>
+            <div class="partners__container-logo__item">Meta</div>
+            <div class="partners__container-logo__item">Remote</div>
+            <div class="partners__container-logo__item">GitHub</div>
+          </div>
+        </div>
       </section>
     </main>
+
     <footer>
-      <div>
+      <div class="footer__container">
         <h3 class="logo">WeRemote</h3>
-        <p>© WeRemote 2023</p>
+        <p class="reserve">2023 WeRemotes. All rights reserved.</p>
       </div>
     </footer>
     <script src="./app/app.js"></script>
