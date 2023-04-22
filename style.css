@@ -104,7 +104,7 @@ body {
 }
 
 header {
-  background: url("../images/backgrounds/main-bg.png");
+  background: url("./images/backgrounds/main-bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -166,7 +166,7 @@ header {
   text-transform: uppercase;
   line-height: 1.5;
   display: inline-block;
-  background-image: url("../images/about/redfilter.jpeg");
+  background-image: url("./images/about/redfilter.jpeg");
   -webkit-background-clip: text;
   color: transparent;
   background-size: contain;
