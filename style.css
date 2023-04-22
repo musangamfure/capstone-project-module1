@@ -109,10 +109,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--gray-color);
-
-  /* min-height: 100vh; */
   padding: 20px;
-  min-height: 90vh;
 }
 
 .lower-nav__hamburger {
@@ -145,20 +142,24 @@ header {
 }
 
 .about__hero-heading {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-transform: capitalize;
   line-height: 1.5;
   color: var(--orange-color);
   background-size: contain;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 15px;
   text-align: center;
 }
 
 .about__hero-body {
   background-color: var(--gray-color);
   text-align: center;
+  margin: 15px 0;
+  background-color: var(--gray-color);
+  padding: 30px;
+  line-height: 1.5;
 }
 
 .hero__heading {
@@ -248,6 +249,15 @@ header {
 
 .decide__container-body {
   line-height: 1.4;
+}
+
+.decide__container-title {
+  margin-bottom: 15px;
+}
+
+.about-logo {
+  color: #ec5242;
+  font-size: 1.5rem;
 }
 
 .program__card:hover {
@@ -556,7 +566,7 @@ button:hover {
 
   .top-nav {
     display: block;
-    background-color: var(--black-color);
+    background-color: var(--lightGray-color);
     width: 100%;
   }
 
@@ -564,9 +574,10 @@ button:hover {
     display: flex;
     justify-content: flex-end;
     height: 40px;
-    padding: 5px 50px;
+    padding: 5px 30px;
     width: 100%;
-    margin-right: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .top-nav__menu {
